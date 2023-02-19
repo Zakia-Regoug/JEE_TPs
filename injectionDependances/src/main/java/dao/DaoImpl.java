@@ -1,11 +1,11 @@
 package dao;
 
+import org.springframework.stereotype.Component;
 public class DaoImpl implements Idao{
+
     @Override
     public double getData() {
-        /*
-        se connecter a bdd
-         */
+        System.out.println("Version BDD");
         double temp=Math.random()*40;
         return temp;
     }

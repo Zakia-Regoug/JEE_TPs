@@ -1,12 +1,10 @@
 package metier;
 
 import dao.Idao;
+import org.springframework.stereotype.Component;
 
 public class MetierImpl implements IMetier{
-    private Idao dao; //couplage faible
-    /*
-    dao=new   signifie dependances d'une classe (il faut pas de new)
-    */
+    private Idao dao;
     @Override
     public double calcul() {
         double tmp=dao.getData();
